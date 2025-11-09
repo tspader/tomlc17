@@ -1,0 +1,6 @@
+app_name = "my_application"
+
+[database.backend.postgres]
+host = "localhost"
+# Missing required 'port' field
+database = "mydb"

@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I/home/spader/source/external/tomlc17/src",
+      "-I/home/spader/.local/share/spn/cache/store/sp/943cd861/include",
+      "-std=c11",
+      "-g",
+      "-o",
+      "/home/spader/source/external/tomlc17/build/debug/tomlc17",
+      "/home/spader/source/external/tomlc17/main.c"
+    ],
+    "directory": "/home/spader/source/external/tomlc17",
+    "file": "/home/spader/source/external/tomlc17/main.c",
+    "output": "/home/spader/source/external/tomlc17/build/debug/tomlc17"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I/home/spader/source/external/tomlc17/src",
+      "-I/home/spader/.local/share/spn/cache/store/sp/943cd861/include",
+      "-std=c11",
+      "-g",
+      "-o",
+      "/home/spader/source/external/tomlc17/build/debug/tomlc17",
+      "/home/spader/source/external/tomlc17/src/tomlc17.c"
+    ],
+    "directory": "/home/spader/source/external/tomlc17",
+    "file": "/home/spader/source/external/tomlc17/src/tomlc17.c",
+    "output": "/home/spader/source/external/tomlc17/build/debug/tomlc17"
+  }
+]

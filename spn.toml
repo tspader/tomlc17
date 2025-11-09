@@ -1,0 +1,58 @@
+[package]
+name = "tomlc17"
+version = "0.1.0"
+
+[deps]
+sp = "1.5.1"
+utest = "1.0.0"
+
+
+[[bin]]
+name = "tomlc17"
+source = ["main.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "toml_check"
+source = ["toml_check.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "test"
+source = ["test.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "example_01_basic_parsing"
+source = ["examples/01_basic_parsing.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "example_02_schema_validation"
+source = ["examples/02_schema_validation.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "example_03_struct_binding"
+source = ["examples/03_struct_binding.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "example_04_validation_errors"
+source = ["examples/04_validation_errors.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "example_05_declarative_schema"
+source = ["examples/05_declarative_schema.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "spn_schema"
+source = ["spn_schema.c", "src/spn_schema_def.c", "src/tomlc17.c"]
+include = ["src"]
+
+[[bin]]
+name = "test_spn_schema"
+source = ["test_spn_schema.c", "src/spn_schema_def.c", "src/tomlc17.c"]
+include = ["src"]

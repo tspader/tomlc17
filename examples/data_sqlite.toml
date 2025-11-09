@@ -1,0 +1,5 @@
+app_name = "my_application"
+
+[database.backend.sqlite]
+path = "/var/data/app.db"
+read_only = false

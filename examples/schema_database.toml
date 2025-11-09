@@ -1,0 +1,49 @@
+# Schema for database configuration with backend options
+# Demonstrates nested table validation with mutually exclusive backends
+
+"$type" = "table"
+
+[app_name]
+"$type" = "string"
+"$required" = true
+"$min_length" = 1
+
+[database]
+"$type" = "table"
+"$required" = true
+
+[database.backend]
+"$type" = "table"
+"$required" = true
+
+[database.backend.postgres]
+"$type" = "table"
+
+[database.backend.postgres.host]
+"$type" = "string"
+"$required" = true
+"$min_length" = 1
+
+[database.backend.postgres.port]
+"$type" = "int"
+"$required" = true
+"$min" = 1
+"$max" = 65535
+
+[database.backend.postgres.database]
+"$type" = "string"
+"$required" = true
+
+[database.backend.postgres.ssl]
+"$type" = "bool"
+
+[database.backend.sqlite]
+"$type" = "table"
+
+[database.backend.sqlite.path]
+"$type" = "string"
+"$required" = true
+"$min_length" = 1
+
+[database.backend.sqlite.read_only]
+"$type" = "bool"

@@ -1,0 +1,14 @@
+[spn]
+version = "1.0.0"
+commit = "00c0fa98"
+
+[[package]]
+name = "sp"
+version = "1.5.1"
+commit = "7a3f19628b14"
+
+[[package]]
+name = "utest"
+version = "1.0.0"
+commit = "fb622dc480a5"
+
